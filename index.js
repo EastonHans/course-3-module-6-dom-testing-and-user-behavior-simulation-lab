@@ -82,14 +82,19 @@ function submitForm(formId, targetId) {
   return true
 }
 
-function handleFormSubmit(formId, targetId) {
+function handleFormSubmit(formId, targetId, event) {
   const form = document.getElementById(formId)
   if (!form) {
     throw new Error(`Form with id '${formId}' not found`)
   }
 
-  form.addEventListener('submit', (event) => {
+  if (event && typeof event.preventDefault === 'function') {
     event.preventDefault()
+    return submitForm(formId, targetId)
+  }
+
+  form.addEventListener('submit', (evt) => {
+    evt.preventDefault()
     submitForm(formId, targetId)
   })
 
@@ -114,7 +119,7 @@ function initApp() {
   const button = document.getElementById('simulate-click')
 
   if (form) {
-    handleFormSubmit('user-form', 'dynamic-content')
+    form.addEventListener('submit', (event) => handleFormSubmit('user-form', 'dynamic-content', event))
   }
 
   if (button) {
@@ -124,6 +129,15 @@ function initApp() {
 
 if (typeof window !== 'undefined') {
   window.addEventListener('DOMContentLoaded', initApp)
+  window.createElement = createElement
+  window.addElementToDOM = addElementToDOM
+  window.removeElementFromDOM = removeElementFromDOM
+  window.displayError = displayError
+  window.clearError = clearError
+  window.submitForm = submitForm
+  window.handleFormSubmit = handleFormSubmit
+  window.simulateClick = simulateClick
+  window.initApp = initApp
 }
 
 module.exports = {

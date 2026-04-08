@@ -95,6 +95,17 @@ describe('DOM Testing and User Behavior Simulation', () => {
     expect(document.getElementById('dynamic-content').textContent).toContain('User change')
   })
 
+  it('should handle form submission directly and update the DOM via an event', () => {
+    const input = document.getElementById('user-input')
+    input.value = 'Direct submit'
+    handleFormSubmit('user-form', 'dynamic-content')
+
+    const submitEvent = new Event('submit', { bubbles: true, cancelable: true })
+    document.getElementById('user-form').dispatchEvent(submitEvent)
+
+    expect(document.getElementById('dynamic-content').textContent).toContain('Direct submit')
+  })
+
   it('should return false when removing a missing element', () => {
     expect(removeElementFromDOM('missing-element')).toBe(false)
   })
