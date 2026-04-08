@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="15" failures="0" errors="0" time="0.602">
+  <testsuite name="DOM Testing and User Behavior Simulation" errors="0" failures="0" skipped="0" timestamp="2026-04-08T15:18:05" time="0.251" tests="15">
+    <testcase classname="DOM Testing and User Behavior Simulation loads the HTML template and contains the form, button, and dynamic content container" name="DOM Testing and User Behavior Simulation loads the HTML template and contains the form, button, and dynamic content container" time="0.022">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should add an element to the DOM" name="DOM Testing and User Behavior Simulation should add an element to the DOM" time="0.005">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should remove an element from the DOM" name="DOM Testing and User Behavior Simulation should remove an element from the DOM" time="0.004">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should display and clear error messages" name="DOM Testing and User Behavior Simulation should display and clear error messages" time="0.006">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should submit the form and update the DOM with user input" name="DOM Testing and User Behavior Simulation should submit the form and update the DOM with user input" time="0.005">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should show an error for empty form submission" name="DOM Testing and User Behavior Simulation should show an error for empty form submission" time="0.003">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should simulate a button click and update the DOM" name="DOM Testing and User Behavior Simulation should simulate a button click and update the DOM" time="0.007">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should create dynamic elements with the expected class and text" name="DOM Testing and User Behavior Simulation should create dynamic elements with the expected class and text" time="0.004">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should update input value and submit the form correctly" name="DOM Testing and User Behavior Simulation should update input value and submit the form correctly" time="0.004">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should handle form submission directly and update the DOM via an event" name="DOM Testing and User Behavior Simulation should handle form submission directly and update the DOM via an event" time="0.004">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should return false when removing a missing element" name="DOM Testing and User Behavior Simulation should return false when removing a missing element" time="0.002">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should throw an error when adding an element to a missing container" name="DOM Testing and User Behavior Simulation should throw an error when adding an element to a missing container" time="0.013">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should throw an error when simulating a click with a missing button" name="DOM Testing and User Behavior Simulation should throw an error when simulating a click with a missing button" time="0.003">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should throw when submitForm is called with a missing form or target" name="DOM Testing and User Behavior Simulation should throw when submitForm is called with a missing form or target" time="0.005">
+    </testcase>
+    <testcase classname="DOM Testing and User Behavior Simulation should attach event listeners and process a live form submit" name="DOM Testing and User Behavior Simulation should attach event listeners and process a live form submit" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>
